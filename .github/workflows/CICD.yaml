@@ -42,4 +42,4 @@ jobs:
         run: |
           ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker pull znfstha/cicd'
           ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker stop coursework && docker rm coursework'
-          ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker run --name coursework -p 80:80 -d znfstha/CICD'
+          ssh -t ubuntu@$SERVER_IP -i pem.pem 'docker run --name coursework -p 80:80 -d znfstha/cicd'
