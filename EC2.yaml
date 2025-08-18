@@ -122,7 +122,7 @@ Resources:
       Tags:
       - Key: Name
         Value: LabElasticIP
-
+ 
 Outputs:
   ElasticIPPublicIP:
     Value: !GetAtt ElasticIP.PublicIp
