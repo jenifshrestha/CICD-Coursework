@@ -17,8 +17,8 @@ jobs:
       - name: "Build Docker Image"
         run: |
           docker login -u znfstha -p $DOCKERHUB_PAT
-          docker build -t znfstha/CICD .
-          docker push znfstha/CICD
+          docker build -t znfstha/cicd .
+          docker push znfstha/cicd
         env:
           DOCKERHUB_PAT: ${{ secrets.DOCKERHUB_PAT }}
 
